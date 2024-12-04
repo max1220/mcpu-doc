@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>md/Quick_reference.md</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">md/Quick_reference.md</h1>
+</header>
+<h1 id="mcpu-quick-reference">MCPU quick reference</h1>
+<p>MCPU is probably best described as a TTA-like uRISC CPU
+architecture</p>
+<p>The term MCPU stands for max1220’s CPU, mini-CPU, modular CPU,
+Minecraft CPU - Pick your favorite, it’s just a meaningless project name
+;P</p>
+<h2 id="specifications">Specifications</h2>
+<ul>
+<li>Registers
+<ul>
+<li><code>CNT_PC</code>: Program counter</li>
+<li><code>REG_ADDR</code>: Address used for reading/writing RAM</li>
+<li><code>SRG_IMM</code>: Last decoded immediate value</li>
+<li><code>REG_ALU_A</code>, <code>REG_ALU_B</code>: Values used in ALU
+operations</li>
+<li><code>REG_I</code>, <code>REG_J</code>, <code>REG_K</code>:
+General-purpose registers
+<ul>
+<li>optional, might be used for other purposes depending on
+implementation</li>
+</ul></li>
+</ul></li>
+<li>Memory
+<ul>
+<li>Flat address space same size as word size
+<ul>
+<li>Implementations could use General-purpose registers for address
+extension for small word-sized(e.g. 8-bit)</li>
+</ul></li>
+<li>Instruction memory(<code>IROM</code>) only addressed by
+<code>CNT_PC</code>, read only on instruction fetch</li>
+<li>Data memory(<code>DRAM</code>) only addressed by
+<code>REG_ADDR</code>, and read/written to using the bus(RAM
+source/target).</li>
+</ul></li>
+<li>Fixed 8-bit instruction set
+<ul>
+<li>works with any word-size by adding/removing stages for the immediate
+value shift register</li>
+</ul></li>
+<li>Only moves data on a single bus shared between
+functions/registers(TTA-like)
+<ul>
+<li>“MOV-only instruction set”</li>
+</ul></li>
+</ul>
+<h2 id="instruction-set">Instruction set</h2>
+<p>The MCPU instruction set is a fixed 8-bit instruction set. It can be
+thought of as only having three instructions:</p>
+<ul>
+<li><code>MOV &lt;src&gt; &lt;dst&gt;</code>
+<ul>
+<li>Move value from source to target</li>
+</ul></li>
+<li><code>CMOV &lt;src&gt; &lt;dst&gt;</code>
+<ul>
+<li>Conditional move value from source to target(executes only if ALU
+test output is true)</li>
+</ul></li>
+<li><code>IMM &lt;7 bit immediate&gt;</code>
+<ul>
+<li>Load or shift in immediate value(first <code>IMM</code> instruction
+loads a new value, successive <code>IMM</code> instructions shift in
+more bits)</li>
+</ul></li>
+</ul>
+<h2 id="instruction-encoding">Instruction Encoding</h2>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>IS_IMM</td>
+<td>IS_COND</td>
+<td>TARGET</td>
+<td>TARGET</td>
+<td>TARGET</td>
+<td>SOURCE</td>
+<td>SOURCE</td>
+<td>SOURCE</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Bits 0-2 encode the operation source register/function</li>
+<li>Bits 3-5 encode the operation target register/function</li>
+<li>Bit 6, if set, makes the operation conditional(only executes
+instruction if ALU test result is true)</li>
+<li>Bit 7, if set, makes the operation an <code>IMM</code> instruction,
+and the lower 7 bits are instead used as the immediate value, which is
+loaded or shifted into the immediate value, depending on if the last
+instruction was also an <code>IMM</code> instruction.</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p>Sources are functions/registers that can be read on the bus.</p>
+<ul>
+<li>Program counter (0)</li>
+<li>Address register (1)</li>
+<li>RAM at address register (2)</li>
+<li>Last encoded immediate value (3)</li>
+<li>ALU result (4)</li>
+<li>Registers I, J, K (5, 6, 7)</li>
+</ul>
+<h2 id="targets">Targets</h2>
+<p>Targets are functions/registers that can be written to from the
+bus.</p>
+<ul>
+<li>Program counter (0)</li>
+<li>Address register (1)</li>
+<li>Write to RAM at address register (2)</li>
+<li>ALU registers A and B (3, 4)</li>
+<li>Registers I, J, K (5, 6, 7)</li>
+</ul>
+<h2 id="alu">ALU</h2>
+<p>The ALU performs operations on the values in the ALU registers
+<code>A</code> and <code>B</code> with the current ALU instruction in
+the IMM register to produce a result. The upper bits of the IMM register
+can still be used as an immediate value, see B pre-operation.</p>
+<table>
+<thead>
+<tr class="header">
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>B_PRE</td>
+<td>B_PRE</td>
+<td>CIN</td>
+<td>INV</td>
+<td>OP</td>
+<td>OP</td>
+<td>OP</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Data operation(Bits 0-2)
+<ul>
+<li><code>ADD</code>(0), <code>AND</code>(1), <code>OR</code>(2),
+<code>XOR</code>(3), <code>A</code>(4), <code>B</code>(5),
+<code>X</code>(6), <code>Y</code>(7)</li>
+</ul></li>
+<li>Test operation(Bits 0-2)
+<ul>
+<li><code>A==0</code>(0), <code>B==0</code>(1), <code>A&gt;B</code>(2),
+<code>A==B</code>(3), <code>A&lt;B</code>(4), <code>low bit B</code>(5),
+<code>high bit B</code>(6), <code>SENSE</code>(7)</li>
+</ul></li>
+<li>Bit 3 inverts the B operation <em>after</em> the B pre-operation,
+but <em>before</em> the data/test operation</li>
+<li>Bit 4 is the carry-in bit for addition(if set, result of add
+operation is A+B+1)</li>
+<li>B pre-operation(Bits 5,6)
+<ul>
+<li>alter the value in the B register before it is used in the data/test
+operation</li>
+<li>B unmodified(0), replace by ALU immediate(1), B right/left shifted
+by 1 (2, 3)</li>
+</ul></li>
+</ul>
+<h2 id="macro-instructions">Macro-instructions</h2>
+<p>Some common assembler idioms can be easily implemented using multiple
+instructions.</p>
+<ul>
+<li><code>IMM &lt;large immediate&gt;</code> -&gt;
+<code>IMM &lt;7-bit part&gt;</code> ;
+<code>IMM &lt;7-bit part&gt;</code> ; (…)</li>
+<li><code>IMOV &lt;i_val&gt; &lt;dst&gt;</code> -&gt;
+<code>IMM &lt;i_val&gt;</code> ; <code>MOV IMM &lt;dst&gt;</code></li>
+<li><code>JUMP &lt;i_addr&gt;</code> -&gt;
+<code>IMOV &lt;i_addr&gt; PC</code></li>
+<li><code>ADDR &lt;i_addr&gt;</code> -&gt;
+<code>IMOV &lt;i_addr&gt; ADDR</code></li>
+<li><code>LOAD &lt;i_addr&gt; &lt;dst&gt;</code> -&gt;
+<code>ADDR &lt;i_addr&gt;</code> ; <code>MOV RAM &lt;dst&gt;</code></li>
+<li><code>STORE &lt;i_addr&gt; &lt;src&gt;</code> -&gt;
+<code>ADDR &lt;i_addr&gt;</code> ; <code>MOV &lt;src&gt; RAM</code></li>
+<li><code>ALU &lt;alu_op&gt;</code> -&gt;
+<code>IMM &lt;encoded ALU operation&gt;</code></li>
+<li><code>BRANCH &lt;i_addr&gt; &lt;alu_op&gt;</code> -&gt;
+<code>ADDR &lt;i_addr&gt;</code> ; <code>ALU &lt;alu_op&gt;</code> ;
+<code>CMOV ADDR PC</code></li>
+</ul>
+</body>
+</html>

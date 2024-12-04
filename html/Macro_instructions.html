@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>md/Macro_instructions.md</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">md/Macro_instructions.md</h1>
+</header>
+<h1 id="macro-instructions">Macro instructions</h1>
+<p>Some common assembler idioms can be easily implemented using multiple
+instructions.</p>
+<ul>
+<li><code>IMM &lt;large immediate&gt;</code>
+<ul>
+<li><code>IMM &lt;7-bit part&gt;</code></li>
+<li><code>IMM &lt;7-bit part&gt;</code></li>
+<li>(…)</li>
+</ul></li>
+<li><code>IMOV &lt;i_val&gt; &lt;dst&gt;</code>
+<ul>
+<li><code>IMM &lt;i_val&gt;</code></li>
+<li><code>MOV IMM &lt;dst&gt;</code></li>
+</ul></li>
+<li><code>JUMP &lt;i_addr&gt;</code>
+<ul>
+<li><code>IMOV &lt;i_addr&gt; PC</code></li>
+</ul></li>
+<li><code>ADDR &lt;i_addr&gt;</code>
+<ul>
+<li><code>IMOV &lt;i_addr&gt; ADDR</code></li>
+</ul></li>
+<li><code>LOAD &lt;i_addr&gt; &lt;dst&gt;</code>
+<ul>
+<li><code>ADDR &lt;i_addr&gt;</code></li>
+<li><code>MOV RAM &lt;dst&gt;</code></li>
+</ul></li>
+<li><code>STORE &lt;i_addr&gt; &lt;src&gt;</code>
+<ul>
+<li><code>ADDR &lt;i_addr&gt;</code></li>
+<li><code>MOV &lt;src&gt; RAM</code></li>
+</ul></li>
+<li><code>ALU &lt;alu_op&gt;</code>
+<ul>
+<li><code>IMM &lt;encoded ALU operation&gt;</code></li>
+</ul></li>
+<li><code>BRANCH &lt;i_addr&gt; &lt;alu_op&gt;</code>
+<ul>
+<li><code>ADDR &lt;i_addr&gt;</code></li>
+<li><code>ALU &lt;alu_op&gt;</code></li>
+<li><code>CMOV ADDR PC</code></li>
+</ul></li>
+</ul>
+<p>Other common operations:</p>
+<p>Perform ALU operation on 2 values stored in RAM, store result in
+RAM:</p>
+<pre><code>LOAD &lt;i_addr_a&gt; A
+LOAD &lt;i_addr_b&gt; B
+ADDR &lt;i_addr_res&gt;
+ALU &lt;alu_op&gt;
+MOV ALU RAM</code></pre>
+<p>Increment value:</p>
+<pre><code>MOV &lt;src&gt; A
+ALU ADD IMM C 0 # add a+IMM with carry in
+MOV ALU &lt;dst&gt;</code></pre>
+<p>Add to value:</p>
+<pre><code>MOV &lt;src&gt; A
+ALU ADD IMM _ &lt;add&gt; # add a+IMM
+MOV ALU &lt;dst&gt;</code></pre>
+</body>
+</html>
