@@ -14,6 +14,9 @@ There are also several example implementations to lear from, including a web
 based emulator and assembler that you can try in your browser, as well as an
 implementation in Minecraft.
 
+The term MCPU stands for max1220's CPU, mini-CPU, modular CPU, Minecraft CPU -
+Pick your favorite, it's just a meaningless project name ;P
+
 
 
 ## Getting started
@@ -24,23 +27,23 @@ has a built-in emulator and assembler and interactive examples.
 
 [mcpu-web homepage](https://max1220.github.io/mcpu-web/)
 
-The [quick reference](/md/Quick_reference.md) is also very useful as a reference.
+The [quick reference](md/Quick_reference.md) is also very useful as a reference.
 
 
 
 ## Documentation Index
 
-[Quick reference - Compact description of entire architecture](/md/Quick_reference.md)
+[Quick reference - Compact description of entire architecture](md/Quick_reference.md)
 
-[Instruction set - Describes the ALU used by the MCPU.](/md/Instruction_set.md)
+[Instruction set - Describes the ALU used by the MCPU.](md/Instruction_set.md)
 
-[Assembler Syntax - Describes the assembler syntax used by the assembler.](/md/Assembler_syntax.md)
+[Assembler Syntax - Describes the assembler syntax used by the assembler.](md/Assembler_syntax.md)
 
-[ALU - Describes the ALU used by the MCPU.](/md/ALU.md)
+[ALU - Describes the ALU used by the MCPU.](md/ALU.md)
 
-[Macro instructions - Common assembler functions for the MCPU.](/md/Macro_instructions.md)
+[Macro instructions - Common assembler functions for the MCPU.](md/Macro_instructions.md)
 
-[Implementations - Links and notes for the implementations.](/md/Implementations.md)
+[Implementations - Links and notes for the implementations.](md/Implementations.md)
 
 
 

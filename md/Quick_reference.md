@@ -2,9 +2,6 @@
 
 MCPU is probably best described as a TTA-like uRISC CPU architecture
 
-The term MCPU stands for max1220's CPU, mini-CPU, modular CPU, Minecraft CPU -
-Pick your favorite, it's just a meaningless project name ;P
-
 
 
 ## Specifications
