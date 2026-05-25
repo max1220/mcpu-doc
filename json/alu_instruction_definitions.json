@@ -1,0 +1,59 @@
+{
+    "alu_a_op_mask  ":  7,
+    "alu_neg_bit    ":  8,
+    "alu_cin_bit    ":  16,
+    "alu_b_op_mask  ":  96,
+    "alu_b_op_shift ":  5,
+    "alu_a_op_arith_name ": [
+        "ADD",
+        "AND",
+        "OR",
+        "XOR",
+        "A",
+        "B",
+        "X",
+        "Y"
+    ],
+    "alu_a_op_arith_expr ": [
+        "A + B",
+        "A & B",
+        "A | B",
+        "A ^ B",
+        "A",
+        "B",
+        "X",
+        "Y"
+    ],
+    "alu_a_op_test_name ": [
+        "A_EQ_Z",
+        "B_EQ_Z",
+        "A_GT_B",
+        "A_EQ_B",
+        "A_LT_B",
+        "B_LO",
+        "B_HI",
+        "SENSE"
+    ],
+    "alu_a_op_test_expr ": [
+        "A == 0",
+        "B == 0",
+        "A > B",
+        "A == B",
+        "A < B",
+        "B[0]",
+        "B[MSB]",
+        "sense"
+    ],
+    "alu_b_op_name ": [
+        "B",
+        "IMM",
+        "LSHIFT",
+        "RSHIFT"
+    ],
+    "alu_b_op_expr ": [
+        "B",
+        "ALU_IMM",
+        "B << 1",
+        "B >> 1"
+    ]
+}

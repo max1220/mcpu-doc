@@ -1,0 +1,48 @@
+{
+    "op_imm_mask":      127,
+    "op_imm_bit":       128,
+    "op_cond_bit":      64,
+    "op_source_mask":   7,
+    "op_target_mask":   56,
+    "op_target_shift":  3,
+    "source_id_to_name": [
+        "PC",
+        "ADDR",
+        "RAM",
+        "IMM",
+        "ALU",
+        "I",
+        "J",
+        "K"
+    ],
+    "source_id_to_long_name": [
+        "CNT_PC",
+        "REG_ADDR",
+        "READ_RAM",
+        "SRG_IMM",
+        "ALU_RES",
+        "REG_I",
+        "REG_J",
+        "REG_K"
+    ],
+    "target_id_to_name": [
+        "PC",
+        "ADDR",
+        "RAM",
+        "A",
+        "B",
+        "I",
+        "J",
+        "K"
+    ],
+    "target_id_to_long_name": [
+        "CNT_PC",
+        "REG_ADDR",
+        "WRITE_RAM",
+        "ALU_A",
+        "ALU_B",
+        "REG_I",
+        "REG_J",
+        "REG_K"
+    ]
+}
