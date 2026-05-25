@@ -39,7 +39,7 @@ the arithmetic and test operation.
 bits | Arithmetic | Pseudo-code | Test   | Pseudo-code
 ---: | ---------: | ----------: | :----- | ----------:
  000 |        ADD |       A + B | A_EQ_Z | A == 0
- 001 |        AND |       A & 0 | B_EQ_Z | B == 0
+ 001 |        AND |       A & B | B_EQ_Z | B == 0
  010 |         OR |       A | B | A_GT_B | A > B
  011 |        XOR |       A ^ B | A_EQ_B | A == B
  100 |          A |           A | A_LT_B | A < B
