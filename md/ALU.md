@@ -25,7 +25,7 @@ current immediate value(in `SRG_IMM`), and is split into multiple parts:
 
 `A_OP` (bits 0-2) determines the arithmetic and test ALU operation(see table below).
 
-`NEG` (bit 3) if set signals that the value in B should be negated after the B operation, but before the arithmetic and test operation, and that the `test` output should be negated.
+`NEG` (bit 3) if set signals that the value in B should be bitwise negated (NOT, i.e. `~B`) after the B operation, but before the arithmetic and test operation, and that the `test` output should be inverted.
 
 `CIN` (bit 4) if set enables the carry input for the addition operation( ADD does A + B + 1).
 
@@ -57,7 +57,7 @@ bits | Pseudo-code
 ---: | -----------
   00 | B
   01 | ALU_IMM*
-  10 | B << 1
-  11 | B >> 1
+  10 | B >> 1
+  11 | B << 1
 
 ( * `ALU_IMM` refers to the bits not included in the ALU operation, bits 7-* )

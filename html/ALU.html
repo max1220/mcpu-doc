@@ -7,9 +7,6 @@
   <title>md/ALU.md</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -28,13 +25,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -58,6 +58,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -84,9 +88,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -148,10 +153,18 @@
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
@@ -198,8 +211,9 @@ parts:</p>
 <p><code>A_OP</code> (bits 0-2) determines the arithmetic and test ALU
 operation(see table below).</p>
 <p><code>NEG</code> (bit 3) if set signals that the value in B should be
-negated after the B operation, but before the arithmetic and test
-operation, and that the <code>test</code> output should be negated.</p>
+bitwise negated (NOT, i.e. <code>~B</code>) after the B operation, but
+before the arithmetic and test operation, and that the <code>test</code>
+output should be inverted.</p>
 <p><code>CIN</code> (bit 4) if set enables the carry input for the
 addition operation( ADD does A + B + 1).</p>
 <p><code>B_OP</code> (bits 5-6) determines the ALU operation performed
@@ -227,7 +241,7 @@ operation.</p>
 <tr class="even">
 <td style="text-align: right;">001</td>
 <td style="text-align: right;">AND</td>
-<td style="text-align: right;">A &amp; 0</td>
+<td style="text-align: right;">A &amp; B</td>
 <td style="text-align: left;">B_EQ_Z</td>
 <td style="text-align: right;">B == 0</td>
 </tr>
@@ -296,11 +310,11 @@ external inputs to the ALU )</p>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">10</td>
-<td>B &lt;&lt; 1</td>
+<td>B &gt;&gt; 1</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">11</td>
-<td>B &gt;&gt; 1</td>
+<td>B &lt;&lt; 1</td>
 </tr>
 </tbody>
 </table>

@@ -1035,9 +1035,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "ADD B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "ADD B=RSHIFT"
 	},
 	{
 		"alu_op": 65,
@@ -1051,9 +1051,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "AND B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "AND B=RSHIFT"
 	},
 	{
 		"alu_op": 66,
@@ -1067,9 +1067,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "OR B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "OR B=RSHIFT"
 	},
 	{
 		"alu_op": 67,
@@ -1083,9 +1083,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "XOR B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "XOR B=RSHIFT"
 	},
 	{
 		"alu_op": 68,
@@ -1099,9 +1099,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "A B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "A B=RSHIFT"
 	},
 	{
 		"alu_op": 69,
@@ -1115,9 +1115,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "B B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "B B=RSHIFT"
 	},
 	{
 		"alu_op": 70,
@@ -1131,9 +1131,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "X B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "X B=RSHIFT"
 	},
 	{
 		"alu_op": 71,
@@ -1147,9 +1147,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "Y B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "Y B=RSHIFT"
 	},
 	{
 		"alu_op": 72,
@@ -1163,9 +1163,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "ADD NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "ADD NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 73,
@@ -1179,9 +1179,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "AND NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "AND NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 74,
@@ -1195,9 +1195,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "OR NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "OR NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 75,
@@ -1211,9 +1211,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "XOR NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "XOR NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 76,
@@ -1227,9 +1227,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "A NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "A NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 77,
@@ -1243,9 +1243,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "B NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "B NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 78,
@@ -1259,9 +1259,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "X NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "X NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 79,
@@ -1275,9 +1275,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "Y NEG B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "Y NEG B=RSHIFT"
 	},
 	{
 		"alu_op": 80,
@@ -1291,9 +1291,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "ADD CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "ADD CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 81,
@@ -1307,9 +1307,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "AND CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "AND CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 82,
@@ -1323,9 +1323,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "OR CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "OR CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 83,
@@ -1339,9 +1339,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "XOR CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "XOR CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 84,
@@ -1355,9 +1355,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "A CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "A CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 85,
@@ -1371,9 +1371,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "B CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "B CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 86,
@@ -1387,9 +1387,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "X CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "X CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 87,
@@ -1403,9 +1403,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "Y CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "Y CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 88,
@@ -1419,9 +1419,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "ADD NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "ADD NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 89,
@@ -1435,9 +1435,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "AND NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "AND NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 90,
@@ -1451,9 +1451,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "OR NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "OR NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 91,
@@ -1467,9 +1467,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "XOR NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "XOR NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 92,
@@ -1483,9 +1483,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "A NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "A NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 93,
@@ -1499,9 +1499,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "B NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "B NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 94,
@@ -1515,9 +1515,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "X NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "X NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 95,
@@ -1531,9 +1531,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 2,
-		"b_op": "LSHIFT",
-		"b_op_expr": "B << 1",
-		"mnemonic": "Y NEG CIN B=LSHIFT"
+		"b_op": "RSHIFT",
+		"b_op_expr": "B >> 1",
+		"mnemonic": "Y NEG CIN B=RSHIFT"
 	},
 	{
 		"alu_op": 96,
@@ -1547,9 +1547,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "ADD B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "ADD B=LSHIFT"
 	},
 	{
 		"alu_op": 97,
@@ -1563,9 +1563,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "AND B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "AND B=LSHIFT"
 	},
 	{
 		"alu_op": 98,
@@ -1579,9 +1579,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "OR B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "OR B=LSHIFT"
 	},
 	{
 		"alu_op": 99,
@@ -1595,9 +1595,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "XOR B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "XOR B=LSHIFT"
 	},
 	{
 		"alu_op": 100,
@@ -1611,9 +1611,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "A B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "A B=LSHIFT"
 	},
 	{
 		"alu_op": 101,
@@ -1627,9 +1627,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "B B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "B B=LSHIFT"
 	},
 	{
 		"alu_op": 102,
@@ -1643,9 +1643,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "X B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "X B=LSHIFT"
 	},
 	{
 		"alu_op": 103,
@@ -1659,9 +1659,9 @@
 		"neg": false,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "Y B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "Y B=LSHIFT"
 	},
 	{
 		"alu_op": 104,
@@ -1675,9 +1675,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "ADD NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "ADD NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 105,
@@ -1691,9 +1691,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "AND NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "AND NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 106,
@@ -1707,9 +1707,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "OR NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "OR NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 107,
@@ -1723,9 +1723,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "XOR NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "XOR NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 108,
@@ -1739,9 +1739,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "A NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "A NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 109,
@@ -1755,9 +1755,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "B NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "B NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 110,
@@ -1771,9 +1771,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "X NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "X NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 111,
@@ -1787,9 +1787,9 @@
 		"neg": true,
 		"cin": false,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "Y NEG B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "Y NEG B=LSHIFT"
 	},
 	{
 		"alu_op": 112,
@@ -1803,9 +1803,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "ADD CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "ADD CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 113,
@@ -1819,9 +1819,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "AND CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "AND CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 114,
@@ -1835,9 +1835,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "OR CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "OR CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 115,
@@ -1851,9 +1851,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "XOR CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "XOR CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 116,
@@ -1867,9 +1867,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "A CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "A CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 117,
@@ -1883,9 +1883,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "B CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "B CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 118,
@@ -1899,9 +1899,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "X CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "X CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 119,
@@ -1915,9 +1915,9 @@
 		"neg": false,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "Y CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "Y CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 120,
@@ -1931,9 +1931,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "ADD NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "ADD NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 121,
@@ -1947,9 +1947,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "AND NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "AND NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 122,
@@ -1963,9 +1963,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "OR NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "OR NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 123,
@@ -1979,9 +1979,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "XOR NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "XOR NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 124,
@@ -1995,9 +1995,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "A NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "A NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 125,
@@ -2011,9 +2011,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "B NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "B NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 126,
@@ -2027,9 +2027,9 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "X NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "X NEG CIN B=LSHIFT"
 	},
 	{
 		"alu_op": 127,
@@ -2043,8 +2043,8 @@
 		"neg": true,
 		"cin": true,
 		"b_op_i": 3,
-		"b_op": "RSHIFT",
-		"b_op_expr": "B >> 1",
-		"mnemonic": "Y NEG CIN B=RSHIFT"
+		"b_op": "LSHIFT",
+		"b_op_expr": "B << 1",
+		"mnemonic": "Y NEG CIN B=LSHIFT"
 	}
 ]

@@ -51,15 +51,15 @@ export const alu_a_op_test_expr = {
 export const alu_b_op_name = {
 	0: "B",
 	1: "IMM",
-	2: "LSHIFT",
-	3: "RSHIFT",
+	2: "RSHIFT",
+	3: "LSHIFT",
 }
 
 export const alu_b_op_expr = {
 	0: "B",
 	1: "ALU_IMM",
-	2: "B << 1",
-	3: "B >> 1",
+	2: "B >> 1",
+	3: "B << 1",
 }
 
 export function decode_alu(alu_op) {

@@ -86,17 +86,17 @@ The upper bits of the IMM register can still be used as an immediate value, see 
 
 |       6 |      5 |      4 |      3 |      2 |      1 |      0 |
 | ------- | ------ | ------ | ------ | ------ | ------ | ------ |
-|   B_PRE |  B_PRE |    CIN |    INV |     OP |     OP |     OP |
+|   B_PRE |  B_PRE |    CIN |    NEG |     OP |     OP |     OP |
 
  * Data operation(Bits 0-2)
    - `ADD`(0), `AND`(1), `OR`(2), `XOR`(3), `A`(4), `B`(5), `X`(6), `Y`(7)
  * Test operation(Bits 0-2)
    - `A==0`(0), `B==0`(1), `A>B`(2), `A==B`(3), `A<B`(4), `low bit B`(5), `high bit B`(6), `SENSE`(7)
- * Bit 3 inverts the B operation *after* the B pre-operation, but *before* the data/test operation
+ * Bit 3 bitwise-negates (NOT, `~B`) the B operation *after* the B pre-operation, but *before* the data/test operation
  * Bit 4 is the carry-in bit for addition(if set, result of add operation is A+B+1)
  * B pre-operation(Bits 5,6)
    - alter the value in the B register before it is used in the data/test operation
-   - B unmodified(0), replace by ALU immediate(1), B right/left shifted by 1 (2, 3)
+   - B unmodified(0), replace by ALU immediate(1), B right-shifted by 1 (2), B left-shifted by 1 (3)
 
 
 
